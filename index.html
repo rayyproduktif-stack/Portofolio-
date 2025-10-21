@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <a href="index.html"><i class='bx bx-home'></i></a>
+    <a href="profile.html"><i class='bx bx-user'></i></a>
+    <a href="bookmark.html"><i class='bx bx-bookmark'></i></a>
+    <a href="location.html"><i class='bx bx-map'></i></a>
+    <a href="notification.html" class="notif"><i class='bx bx-bell'></i></a>
+    <a href="gallery.html" class="active"><img src="background.jpg" alt="thumb"></a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <section class="main">
+    <div class="text-section">
+      <h2>Di balik setiap senyuman, ada cerita kita</h2>
+      <h1>Jejak Cinta Kita</h1>
+      <p>Tersimpan dalam kenangan yang tak pernah pudar</p>
+
+      <div class="main-photo">
+        <img src="fotoberdua2.jpg" alt="Merbabu Main">
+      </div>
+    </div>
+
+    <!-- KOLEKSI -->
+    <div class="collection">
+      <div class="header">
+        <h3>Koleksi</h3>
+        <i class='bx bx-dots-horizontal-rounded'></i>
+      </div>
+
+      <div class="scroll-section">
+        <div class="category">
+          <h4>Cooking Time 🧑🏻‍🍳</h4>
+          <div class="scroll-images">
+            <img src="masak6.jpg" alt="">
+            <img src="masak4.jpg" alt="">
+            <img src="masak5.jpg" alt="">
+            <img src="masak7.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="category">
+          <h4>Photobooth 📸</h4>
+          <div class="scroll-images">
+            <img src="photobooth.png" alt="">
+            <img src="photobooth 1.png" alt="">
+            <img src="photobooth 2.png" alt="">
+          </div>
+        </div>
+
+        <div class="category">
+          <h4>Hari Spesial 💖</h4>
+          <div class="scroll-images">
+            <img src="wisuda.png" alt="">
+            <img src="images/album2.jpg" alt="">
+            <img src="images/album3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      
+ <div class="footer">
+    <button class="explore" onclick="window.location.href='timeline.html'">
+      lebihh banyak <i class='bx bx-right-arrow-alt'></i>
+    </button>
+  </div>
+    </div>
+  </section>
+  
+  <!-- === MUSIC PLAYER === -->
+<div class="music-player">
+  <div class="music-left">
+    <img id="cover" src="background 2.jpg" alt="Cover">
+    <div class="music-text">
+      <h4 id="title">Favorit Lagu</h4>
+      <p id="artist">My Princess 🤍</p>
+    </div>
+  </div>
+
+  <div class="music-center">
+    <div class="progress-container">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="progress" min="0" max="100" value="0">
+      <span id="duration">0:00</span>
+    </div>
+    <div class="music-controls">
+      <button id="prev"><i class='bx bx-skip-previous'></i></button>
+      <button id="playPause"><i class='bx bx-play'></i></button>
+      <button id="next"><i class='bx bx-skip-next'></i></button>
+    </div>
+  </div>
+
+  <div class="music-right">
+    <i class='bx bx-volume-full'></i>
+  </div>
+
+  <audio id="audio"></audio>
+</div>
+
+<!-- ==== VIDEO BACKGROUND ==== -->
+<video autoplay muted loop id="bg-video">
+  <source src="Pinkeu.mp4" type="video/mp4" />
+  Browser kamu tidak mendukung video tag.
+</video>
+
+</body>
+</html>
+
+</body>
+</html>
